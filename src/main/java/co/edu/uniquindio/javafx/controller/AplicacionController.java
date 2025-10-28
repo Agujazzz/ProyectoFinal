@@ -1,9 +1,9 @@
-package co.edu.uniquindio.aplicaciongimnasio.controller;
+package co.edu.uniquindio.javafx.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class AplicacionController {
     @FXML
     private Label welcomeText;
 
