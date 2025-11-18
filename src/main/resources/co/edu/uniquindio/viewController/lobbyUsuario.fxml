@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.javafx.controller.LobbyController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#26965a" height="720.0" stroke="BLACK" strokeType="INSIDE" width="1080.0" />
+            <ImageView fitHeight="728.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/gim.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="1080.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../../../../Downloads/pv.png" />
+               </image>
+            </ImageView>
+            <StackPane fx:id="displayUsuarioContainer" layoutX="-350.0" layoutY="-3.0" opacity="0.9" prefHeight="720.0" prefWidth="351.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="719.0" stroke="BLACK" strokeType="INSIDE" width="351.0">
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <ImageView fitHeight="83.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+                     <image>
+                        <Image url="@../../../../images/lb.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets right="-75.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <Label text="¡Bienvenido!" StackPane.alignment="TOP_CENTER">
+                     <StackPane.margin>
+                        <Insets top="50.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="displayName" alignment="CENTER" text="¡Bienvenido!" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets top="110.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Button fx:id="displayUsuario" mnemonicParsing="false" onAction="#toggleStackPane" opacity="0.0" prefHeight="71.0" prefWidth="84.0" StackPane.alignment="TOP_RIGHT">
+                     <StackPane.margin>
+                        <Insets right="-75.0" top="5.0" />
+                     </StackPane.margin>
+                  </Button>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,1 @@
+Estudiante,pepe,123121,3 ,12,|MembresiaBasica;ANUAL;3;ACTIVA;2025-11-18;2026-11-18;153000.0
